@@ -1,0 +1,17 @@
+{
+  "name": "mocha-slow-test-reporter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha 'src/**/*.test.js' --reporter spec",
+    "test:fast": "mocha 'src/**/fast.test.js' --reporter src/index.js",
+    "test:slow": "mocha 'src/**/slow.test.js' --reporter src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
